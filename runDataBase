@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "please await ... " 
+docker stop mysql
+docker rm mysql
+
+echo "mysql container successfully removed!"
+
+docker run --name mysql -e MYSQL_ROOT_PASSWORD=devtest  -p 3306:3306 -d mysql
+
+echo "new mysql container successfully created"
+
+
+docker exec -it mysql bash -l
+
