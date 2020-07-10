@@ -8,4 +8,6 @@ const app = express();
 app.use(express.json());
 app.use(routes);
 
-app.listen(3333);
+const PORT = process.env.PORT || 80;
+
+app.listen(PORT, () => console.log(`Server is listening on port ${PORT}`));
