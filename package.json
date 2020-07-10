@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/server.js"
+    "start": "node src/server.js"
   },
   "dependencies": {
     "express": "^4.17.1",
@@ -16,7 +16,16 @@
     "eslint": "^7.4.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
-    "nodemon": "^2.0.4",
     "sequelize-cli": "^6.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucaPietro/food-app-backend.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/LucaPietro/food-app-backend/issues"
+  },
+  "homepage": "https://github.com/LucaPietro/food-app-backend#readme",
+  "description": ""
 }
